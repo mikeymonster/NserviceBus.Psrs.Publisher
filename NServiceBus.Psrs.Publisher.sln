@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28010.2050
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NServiceBus.Psrs.Publisher", "NServiceBus.Psrs.Publisher\NServiceBus.Psrs.Publisher.csproj", "{BB1D019E-42C3-4379-A1A5-1D23F3D93FB6}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Azure", "Azure", "{49935E9C-A381-4465-8EE4-A32467776572}"
+	ProjectSection(SolutionItems) = preProject
+		Azure\deploy.ps1 = Azure\deploy.ps1
+		Azure\parameters.json = Azure\parameters.json
+		Azure\template.json = Azure\template.json
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BB1D019E-42C3-4379-A1A5-1D23F3D93FB6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BB1D019E-42C3-4379-A1A5-1D23F3D93FB6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BB1D019E-42C3-4379-A1A5-1D23F3D93FB6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BB1D019E-42C3-4379-A1A5-1D23F3D93FB6}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A1BD059B-87D8-4E48-8C42-0A135794851B}
+	EndGlobalSection
+EndGlobal

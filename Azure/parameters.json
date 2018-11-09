@@ -1,0 +1,45 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "namespaces_nservicebus_test_name": {
+      "value": "nservicebus-test"
+    },
+    "queues_error_name": {
+      "value": "error"
+    },
+    "topics_bundle_1_name": {
+      "value": "bundle-1"
+    },
+    "queues_publisher_endpoint_name": {
+      "value": "sfa-das-psrs-publisher"
+    },
+    "queues_sfa_das_psrservice_messages_events_reportcreated_name": {
+      "value": "SFA.DAS.PSRService.Messages.Events.ReportCreated"
+    },
+    "queues_sfa_das_psrservice_messages_events_reportsubmitted_name": {
+      "value": "SFA.DAS.PSRService.Messages.Events.ReportSubmitted"
+    },
+    "AuthorizationRules_RootManageSharedAccessKey_name": {
+      "value": "RootManageSharedAccessKey"
+    },
+    "subscriptions_publisher_endpoint_name": {
+      "value": "sfa-das-psrs-publisher"
+    },
+    "subscriptions_sfa_das_psrservice_messages_events_reportcreated_name": {
+      "value": "SFA.DAS.PSRService.Messages.Events.ReportCreated"
+    },
+    "subscriptions_sfa_das_psrservice_messages_events_reportsubmitted_name": {
+      "value": "SFA.DAS.PSRService.Messages.Events.ReportSubmitted"
+    },
+    "rules_$default_name": {
+      "value": "$default"
+    },
+    "rules_SFA.DAS.PSRService.Messages.Events.ReportCreated_name": {
+      "value": "SFA.DAS.PSRService.Messages.Events.ReportCreated"
+    },
+    "rules_SFA.DAS.PSRService.Messages.Events.ReportSubmitted_name": {
+      "value": "SFA.DAS.PSRService.Messages.Events.ReportSubmitted"
+    }
+  }
+}
