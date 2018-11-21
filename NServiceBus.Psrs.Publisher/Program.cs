@@ -3,8 +3,6 @@ using System.Diagnostics;
 using System.IO;
 using System.Threading.Tasks;
 using Microsoft.Extensions.Configuration;
-using NServiceBus.Configuration.AdvancedExtensibility;
-using NServiceBus.Psrs.Publisher.Configuration;
 using NServiceBus.Psrs.Publisher.Services;
 using SFA.DAS.NServiceBus;
 using SFA.DAS.NServiceBus.AzureServiceBus;

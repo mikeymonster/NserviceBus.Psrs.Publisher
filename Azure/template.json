@@ -98,33 +98,7 @@
       ]
     },
     {
-      "comments": "Queue for publisher.",
-      "type": "Microsoft.ServiceBus/namespaces/queues",
-      "name": "[concat(parameters('namespaces_nservicebus_test_name'), '/', parameters('queues_publisher_endpoint_name'))]",
-      "apiVersion": "2017-04-01",
-      "location": "West US",
-      "scale": null,
-      "properties": {
-        "lockDuration": "PT5M",
-        "maxSizeInMegabytes": 5120,
-        "requiresDuplicateDetection": false,
-        "requiresSession": false,
-        "defaultMessageTimeToLive": "P10675199DT2H48M5.4775807S",
-        "deadLetteringOnMessageExpiration": false,
-        "enableBatchedOperations": true,
-        "duplicateDetectionHistoryTimeWindow": "PT10M",
-        "maxDeliveryCount": 2147483647,
-        "status": "Active",
-        "autoDeleteOnIdle": "P10675199DT2H48M5.4775807S",
-        "enablePartitioning": false,
-        "enableExpress": false
-      },
-      "dependsOn": [
-        "[resourceId('Microsoft.ServiceBus/namespaces', parameters('namespaces_nservicebus_test_name'))]"
-      ]
-    },
-    {
-      "comments": "Queue for simple string events.",
+      "comments": "Queue for ReportCreated events.",
       "type": "Microsoft.ServiceBus/namespaces/queues",
       "name": "[concat(parameters('namespaces_nservicebus_test_name'), '/', parameters('queues_sfa_das_psrservice_messages_events_reportcreated_name'))]",
       "apiVersion": "2017-04-01",
@@ -150,7 +124,7 @@
       ]
     },
     {
-      "comments": "Queue for complex events.",
+      "comments": "Queue for ReportSubmitted events.",
       "type": "Microsoft.ServiceBus/namespaces/queues",
       "name": "[concat(parameters('namespaces_nservicebus_test_name'), '/', parameters('queues_sfa_das_psrservice_messages_events_reportsubmitted_name'))]",
       "apiVersion": "2017-04-01",
@@ -225,31 +199,7 @@
       ]
     },
     {
-      "comments": "Subscription for Publisher.",
-      "type": "Microsoft.ServiceBus/namespaces/topics/subscriptions",
-      "name": "[concat(parameters('namespaces_nservicebus_test_name'), '/', parameters('topics_bundle_1_name'), '/', parameters('subscriptions_publisher_endpoint_name'))]",
-      "apiVersion": "2017-04-01",
-      "location": "West US",
-      "scale": null,
-      "properties": {
-        "lockDuration": "PT5M",
-        "requiresSession": false,
-        "defaultMessageTimeToLive": "P10675199DT2H48M5.4775807S",
-        "deadLetteringOnMessageExpiration": false,
-        "deadLetteringOnFilterEvaluationExceptions": false,
-        "maxDeliveryCount": 2147483647,
-        "status": "Active",
-        "enableBatchedOperations": true,
-        "autoDeleteOnIdle": "P10675199DT2H48M5.4775807S",
-        "forwardTo": "[parameters('subscriptions_publisher_endpoint_name')]"
-      },
-      "dependsOn": [
-        "[resourceId('Microsoft.ServiceBus/namespaces', parameters('namespaces_nservicebus_test_name'))]",
-        "[resourceId('Microsoft.ServiceBus/namespaces/topics', parameters('namespaces_nservicebus_test_name'), parameters('topics_bundle_1_name'))]"
-      ]
-    },
-    {
-      "comments": "Subscription for simple String events.",
+      "comments": "Subscription for ReportCreated events.",
       "type": "Microsoft.ServiceBus/namespaces/topics/subscriptions",
       "name": "[concat(parameters('namespaces_nservicebus_test_name'), '/', parameters('topics_bundle_1_name'), '/', parameters('subscriptions_sfa_das_psrservice_messages_events_reportcreated_name'))]",
       "apiVersion": "2017-04-01",
@@ -273,7 +223,7 @@
       ]
     },
     {
-      "comments": "Subscription rule to select simple String events.",
+      "comments": "Subscription rule to select ReportCreated events.",
       "type": "Microsoft.ServiceBus/namespaces/topics/subscriptions/rules",
       "name": "[concat(parameters('namespaces_nservicebus_test_name'), '/', parameters('topics_bundle_1_name'), '/', parameters('subscriptions_sfa_das_psrservice_messages_events_reportcreated_name'), '/', parameters('rules_SFA.DAS.PSRService.Messages.Events.ReportCreated_name'))]",
       "apiVersion": "2017-04-01",
@@ -293,7 +243,7 @@
       ]
     },
     {
-      "comments": "Subscription for Complex events.",
+      "comments": "Subscription for ReportSubmitted events.",
       "type": "Microsoft.ServiceBus/namespaces/topics/subscriptions",
       "name": "[concat(parameters('namespaces_nservicebus_test_name'), '/', parameters('topics_bundle_1_name'), '/', parameters('subscriptions_sfa_das_psrservice_messages_events_reportsubmitted_name'))]",
       "apiVersion": "2017-04-01",
@@ -317,7 +267,7 @@
       ]
     },
     {
-      "comments": "Subscription rule to select Complex events.",
+      "comments": "Subscription rule to select ReportSubmitted events.",
       "type": "Microsoft.ServiceBus/namespaces/topics/subscriptions/rules",
       "name": "[concat(parameters('namespaces_nservicebus_test_name'), '/', parameters('topics_bundle_1_name'), '/', parameters('subscriptions_sfa_das_psrservice_messages_events_reportsubmitted_name'), '/', parameters('rules_SFA.DAS.PSRService.Messages.Events.ReportSubmitted_name'))]",
       "apiVersion": "2017-04-01",

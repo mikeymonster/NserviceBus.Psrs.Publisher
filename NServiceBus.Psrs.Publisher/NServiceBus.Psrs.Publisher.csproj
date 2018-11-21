@@ -9,14 +9,9 @@
   <ItemGroup>
     <PackageReference Include="Microsoft.Extensions.Configuration.Json" Version="2.1.1" />
     <PackageReference Include="Microsoft.Extensions.Options.ConfigurationExtensions" Version="2.1.1" />
-    <PackageReference Include="SFA.DAS.NServiceBus" Version="5.0.1" />
+    <PackageReference Include="SFA.DAS.NServiceBus" Version="6.0.4" />
+    <PackageReference Include="SFA.DAS.PSRService.Messages" Version="1.0.0" />
     <PackageReference Include="WindowsAzure.Storage" Version="9.3.2" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Reference Include="SFA.DAS.PSRService.Messages">
-      <HintPath>..\..\..\..\..\..\esfa\das-public-sector-reporting\src\SFA.DAS.PSRService.Messages\bin\Debug\netstandard2.0\SFA.DAS.PSRService.Messages.dll</HintPath>
-    </Reference>
   </ItemGroup>
 
   <ItemGroup>
