@@ -1,6 +1,4 @@
-﻿using NServiceBus.Psrs.Publisher.Configuration;
-
-namespace NServiceBus.Psrs.Publisher
+﻿namespace NServiceBus.Psrs.Publisher.Configuration
 {
     public class WebConfiguration : IWebConfiguration
     {
