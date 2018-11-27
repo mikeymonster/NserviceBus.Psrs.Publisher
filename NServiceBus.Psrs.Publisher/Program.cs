@@ -92,10 +92,10 @@ namespace NServiceBus.Psrs.Publisher
         private static ConsoleKey GetRunOption()
         {
             System.Console.WriteLine("Options:");
-            System.Console.WriteLine("    1 to send a Report Submitted event");
+            System.Console.WriteLine("    1 to send a Report Created event");
             System.Console.WriteLine("    2 to send Report Updated event");
             System.Console.WriteLine("    3 to send Report Submitted event");
-            System.Console.WriteLine("    4 to send Roatpreboot event");
+            System.Console.WriteLine("    4 to send Roatp event");
             System.Console.WriteLine("    Esc or Q to exit.");
 
             return System.Console.ReadKey().Key;
